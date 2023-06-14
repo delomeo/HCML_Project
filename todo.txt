@@ -1,0 +1,47 @@
+########################################################################################################################################################################
+CODE STUFF
+########################################################################################################################################################################
+TO DO: EXPLANABILITY of CLASSIFIED IMAGE
+
+Briefly, we need to check now the sweetness of our results. Is the classifier really able to discriminate Real vs. Fake images? 
+If yes, what features (pixels) were essential for the model to detect deceptive faces from truthful ones?
+
+First of all, we should validate our results on the second dataset (photoshop-edited image dataset), even though is not a priority right now. 
+What we need to focus on for the moment is explaining the classifier predictions. 
+
+LOCAL EXPLANATIONS:
+We started with the idea of Local Explanations, therefore we are going to select a few samples from the test set to evaluate two algorithms and see the pixels 
+that were relevant for the model:
+    
+    - Deep SHAP (https://shap-lrjball.readthedocs.io/en/latest/generated/shap.DeepExplainer.html)
+    - GradCAM++ (https://keras.io/examples/vision/grad_cam/)
+
+The professor also suggested to investigate global explanations and finally compare the two approaches (LOTS OF VISUALIZATIONS WILL HELP HERE).
+
+GLOBAL EXPLANATIONS: 
+
+1) Saliency Maps: To implement saliency mapping for a CNN, you can follow these steps:          [BING GENERATED]
+      I)    Choose the output class for which you want to compute the saliency map.
+      II)   Compute the gradient of the chosen output class with respect to the input image.
+      III)  Take the absolute value of the gradient and compute the maximum value along the color channels to obtain a 2D saliency map.
+      IV)   Visualize the saliency map as a heatmap.
+      
+2) Saliency+LRP: https://github.com/Hey1Li/Salient-Relevance-Propagation - Interesting-yet-ambitious this repo is the implemented approach of the paper we reviewed 
+
+
+########################################################################################################################################################################
+PAPER & POSTER STUFF
+########################################################################################################################################################################
+
+We should start designing our poster. (Few-but-informative points about our project for each respective point that follows)
+  a) DATASET
+  b) METHODS
+  c) RESULTS
+  d) DISCUSSION & LIMITATIONS
+  e) REFERENCES
+  
+ The Paper will basically have the same sections, plus an ABSTRACT and INTRODUCTION. Perhaps we could incorporate DATASET in METHODS as a subsection, including a  
+ description of the model we trained, and certainly how we generated the explanations. 
+ 
+ 
+ TO DO: ADD SPECIFICS FOR THE FINAL PROJECT
